@@ -4,21 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+
     <script>
-        /*
+
+      /*
         Isso e um comentario multilinha...
     */
 
-    //Esse e um comentario de linha 
+      //Esse e um comentario de linha
 
-        document.write("Libbs 2024")
-     var nome;
-     var endereco;
-     var telefone;
-     const anoNascimento = 2006;
+      document.write("Libbs 2024"); //Escrever na linha
+
+      var nome; //Criar variavel
+      var endereco = "Av dr odair";
+      var telefone = "11 91234567";
+      const anoNascimento = 2006; //Criar Constante
+
+      nome = prompt("Qual e o seu nome?"); //prompt criar 
+
+     studing = confirm("Está estudando no momento?");
+      console.log(studing);
+      
+      if (studing) {
+        alert("Parabens");
+      } else {
+        alert("Vamos estudar");
+      }
+      
+      document.write(nome + "<br>");
+      document.write(endereco + "<br>");
+      document.write(telefone + "<br>");
+
+      console.log("Estou aqui....");
+
+     alert("Voce chegou aqui...."); //Mostrar uma mensagem
+
+        var idade = prompt("Qual e a sua idade?");
+        if (idade > 50) {
+            alert("Nada de neto?");
+        }else if(idade > 25){
+            alert("Já não precisa morar com o papai");
+        }else if(idade >= 18 ){
+            alert("Hora de tirar a habilitação");
+        }else if(idade < 18){
+            alert("Ainda brinca");
+        }
+
     </script>
-    
   </head>
   <body>
     <p>Escrito pelo HTML</p>
