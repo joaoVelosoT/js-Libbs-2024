@@ -1,6 +1,7 @@
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const btn = document.getElementById('btn-submit')
+const info = document.getElementById('info')
 
 btn.addEventListener('click', ()=> {
     const userData = JSON.stringify({

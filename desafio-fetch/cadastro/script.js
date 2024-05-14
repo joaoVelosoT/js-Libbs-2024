@@ -2,7 +2,7 @@ const name = document.getElementById('name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const btn = document.getElementById("btn-submit");
-
+const info = document.getElementById('info')
 btn.addEventListener('click', () =>{
     console.log(name.value)
     console.log(email.value)
@@ -20,6 +20,6 @@ btn.addEventListener('click', () =>{
         method: "Post",
         body: userData,
         headers: {"Content-type" : "application/json; charset=UTF-8"}
-    }).then(result => result.json()).then(data => console.log(data) ).catch(err => console.log(err));
+    }).then(result => result.json()).then(data => info.innerText = data.message  ).catch(err => console.log(err));
 })
 
