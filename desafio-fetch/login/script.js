@@ -8,7 +8,7 @@ btn.addEventListener('click', ()=> {
         email : email.value,
         password : password.value
     })
-    
+    //o token de acesso foi colocado manualmente no script do post
     fetch("http://10.92.198.38:8080/auth/signin", {
         method: "Post",
         body: userData,
