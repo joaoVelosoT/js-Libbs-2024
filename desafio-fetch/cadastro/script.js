@@ -1,13 +1,15 @@
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const btn = document.getElementById("btn-submit");
+const form = document.getElementsByClassName("form")[0];
 const info = document.getElementById('info')
-btn.addEventListener('click', () =>{
+
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
     console.log(name.value)
     console.log(email.value)
     console.log(password.value)
-
+    console.log("testee")
     const userData = JSON.stringify({
         name : name.value,
         email : email.value,

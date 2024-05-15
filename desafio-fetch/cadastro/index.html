@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POST Data to a server</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<h1>Cadastro no Sistema</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h1>Cadastro no Sistema</h1>
 <div class="container">
     <a href="/desafio-fetch/login/index.html"> <button>Login</button></a> 
     <a href="/desafio-fetch/conteudo/"> <button>Post </button></a>
@@ -33,7 +32,39 @@
         
     <div>
         <h1 id="info"></h1>
+    </div> -->
+
+    <!-- //https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DGtsNZtzZiec&psig=AOvVaw29wr8gSJGX9HFGWIwpEqxA&ust=1715878022258000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOiCmbaOkIYDFQAAAAAdAAAAABAE -->
+
+    <div class="container">
+      <div class="welcome">
+        <div class="text">
+          <h2>Welcome Back!</h2>
+          <br />
+          <p>To keep connected with us please login with your personal info</p>
+          <br />
+          <button id="signin">Sign in</button>
+        </div>
+      </div>
+      <div class="createContainer">
+        <div class="form-box">
+          <form class="form" action="" method="post">
+            <span class="title">Create Account</span>
+            <span class="subtitle">Create a free account with your email.</span>
+            <div class="form-container">
+              <input type="text" class="input" placeholder="Full Name" id="name" required min="8"/>
+
+              <input type="email" class="input" placeholder="Email" id="email" required min="8"/>
+
+              <input type="password" class="input" placeholder="Password" id="password" required min="8"/>
+            </div>
+            
+            <input type="submit" id="btn-submit" placeholder="Sign up">
+          </form>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
