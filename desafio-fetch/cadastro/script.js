@@ -6,17 +6,13 @@ const info = document.getElementById('info')
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
-    console.log(name.value)
-    console.log(email.value)
-    console.log(password.value)
-    console.log("testee")
     const userData = JSON.stringify({
         name : name.value,
         email : email.value,
         password : password.value
     })
     
-    
+    console.log("Cadastro Feito com sucesso")
     
     fetch("http://10.92.198.38:8080/auth/signup", {
         method: "Post",

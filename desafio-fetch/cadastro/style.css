@@ -200,3 +200,8 @@ input[type=text], select {
     background-color: #363636;
     color: white;
   }
+
+  #btn-submit:hover {
+    background-color: #eee;
+    color: black;
+  }
